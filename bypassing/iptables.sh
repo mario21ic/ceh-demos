@@ -1,4 +1,9 @@
 #!/bin/sh
+sudo iptables -S INPUT
+sudo iptables -S OUTPUT
+sudo iptables -S FORWARD
+sudo iptables -S -t nat
+
 sudo iptables -F
 sudo iptables -X
 # denegar todos los ports
